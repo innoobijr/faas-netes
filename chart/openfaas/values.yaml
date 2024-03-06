@@ -61,7 +61,7 @@ gatewayPro:
   pprof: false
 
 gateway:
-  image: ghcr.io/openfaas/gateway:0.27.5
+  image: innocentjr1995/gateway:latest
   readTimeout: "1m05s"
   writeTimeout: "1m05s"
   upstreamTimeout: "1m"  # Must be smaller than read/write_timeout
