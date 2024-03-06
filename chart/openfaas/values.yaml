@@ -184,7 +184,7 @@ faasnetesOem:
 
 # For the Community Edition
 faasnetes:
-  image: ghcr.io/innoobijr/faas-netes:0.18.1
+  image: innocentjr1995/faas-netes:latest
   resources:
     requests:
       memory: "120Mi"
