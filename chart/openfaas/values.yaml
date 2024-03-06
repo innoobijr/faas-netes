@@ -61,7 +61,7 @@ gatewayPro:
   pprof: false
 
 gateway:
-  image: ghcr.io/openfaas/gateway:0.27.5
+  image: innocentjr1995/gateway:latest
   readTimeout: "1m05s"
   writeTimeout: "1m05s"
   upstreamTimeout: "1m"  # Must be smaller than read/write_timeout
@@ -77,7 +77,7 @@ gateway:
   logsProviderURL: ""
 
   # Set to true for Istio users as a workaround for:
-  # https://github.com/openfaas/faas/issues/1721
+  # https://github.com/innoobijr/faas/issues/1721
   probeFunctions: false
 
   # See the HPA rule from the Customer Community
@@ -184,7 +184,7 @@ faasnetesOem:
 
 # For the Community Edition
 faasnetes:
-  image: ghcr.io/openfaas/faas-netes:0.18.1
+  image: innocentjr1995/faas-netes:latest
   resources:
     requests:
       memory: "120Mi"

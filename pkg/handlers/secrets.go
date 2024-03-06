@@ -8,8 +8,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/openfaas/faas-netes/pkg/k8s"
-	types "github.com/openfaas/faas-provider/types"
+	"github.com/innoobijr/faas-netes/pkg/k8s"
+	types "github.com/innoobijr/faas-provider/types"
 	"k8s.io/client-go/kubernetes"
 )
 

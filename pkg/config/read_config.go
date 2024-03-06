@@ -6,7 +6,7 @@ package config
 import (
 	"log"
 
-	ftypes "github.com/openfaas/faas-provider/types"
+	ftypes "github.com/innoobijr/faas-provider/types"
 )
 
 // ReadConfig constitutes config from env variables

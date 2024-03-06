@@ -6,11 +6,11 @@
 ## Why is this needed?
 <!--- Why is this change required? What problem does it solve? -->
 <!--- If it fixes an open issue, please link to the issue here. -->
-- [ ] I have raised an issue to propose this change ([required](https://github.com/openfaas/faas/blob/master/CONTRIBUTING.md))
+- [ ] I have raised an issue to propose this change ([required](https://github.com/innoobijr/faas/blob/master/CONTRIBUTING.md))
 
 ## Who is this for?
 
-What company is this for? Are you listed in the [ADOPTERS.md](https://github.com/openfaas/faas/blob/master/ADOPTERS.md) file?
+What company is this for? Are you listed in the [ADOPTERS.md](https://github.com/innoobijr/faas/blob/master/ADOPTERS.md) file?
 
 ## How Has This Been Tested?
 <!--- Please describe in detail how you tested your changes. -->
@@ -29,7 +29,7 @@ What company is this for? Are you listed in the [ADOPTERS.md](https://github.com
 - [ ] My code follows the code style of this project.
 - [ ] My change requires a change to the documentation.
 - [ ] I have updated the documentation accordingly.
-- [ ] I've read the [CONTRIBUTION](https://github.com/openfaas/faas/blob/master/CONTRIBUTING.md) guide
+- [ ] I've read the [CONTRIBUTION](https://github.com/innoobijr/faas/blob/master/CONTRIBUTING.md) guide
 - [ ] I have signed-off my commits with `git commit -s`
 - [ ] I have added tests to cover my changes.
 - [ ] All new and existing tests passed.

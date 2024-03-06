@@ -5,7 +5,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	controller "github.com/openfaas/faas-netes/pkg/apis/iam"
+	controller "github.com/innoobijr/faas-netes/pkg/apis/iam"
 )
 
 // SchemeGroupVersion is group version used to register these objects

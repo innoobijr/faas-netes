@@ -5,7 +5,7 @@ kind create cluster --name pro
 ```
 
 ```bash
-git clone https://github.com/openfaas/faas-netes --depth=1
+git clone https://github.com/innoobijr/faas-netes --depth=1
 cd faas-netes
 
 kubectl apply -f namespaces.yml

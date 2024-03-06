@@ -1,6 +1,6 @@
 # Contributing
 
-This project follows the contributing guide for [OpenFaaS](https://github.com/openfaas/faas/blob/master/CONTRIBUTING.md).
+This project follows the contributing guide for [OpenFaaS](https://github.com/innoobijr/faas/blob/master/CONTRIBUTING.md).
 
 The project-level contributing guide contains instructions specifically relating to faas-netes.
 
@@ -8,7 +8,7 @@ The project-level contributing guide contains instructions specifically relating
 
 ### Helm
 
-Any changes to the helm chart will also need a corresponding change in the [Chart.yml](https://github.com/openfaas/faas-netes/blob/master/chart/openfaas/Chart.yaml) file to bump up the version.
+Any changes to the helm chart will also need a corresponding change in the [Chart.yml](https://github.com/innoobijr/faas-netes/blob/master/chart/openfaas/Chart.yaml) file to bump up the version.
 
 * How to generate new charts
 
@@ -52,13 +52,13 @@ As you are developing on `faas-netes`, you will want to build and test your own 
 ```sh
 make build
 
-kind load docker-image --name="${OF_DEV_ENV:-kind}" openfaas/faas-netes:latest
+kind load docker-image --name="${OF_DEV_ENV:-kind}" innoobijr/faas-netes:latest
 
 helm upgrade openfaas --install openfaas/openfaas \
     --namespace openfaas  \
     --set basic_auth=true \
     --set openfaasImagePullPolicy=IfNotPresent \
-    --set faasnetes.image=openfaas/faas-netes:latest \
+    --set faasnetes.image=innoobijr/faas-netes:latest \
     --set functionNamespace=openfaas-fn
 ```
 

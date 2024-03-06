@@ -11,8 +11,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/openfaas/faas-provider/auth"
-	"github.com/openfaas/faas-provider/types"
+	"github.com/innoobijr/faas-provider/auth"
+	"github.com/innoobijr/faas-provider/types"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )

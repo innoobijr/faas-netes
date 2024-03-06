@@ -49,7 +49,7 @@ cron-connector openfaas/cron-connector \
 ## Deploying using local version of the chart
 
 ```bash
-git clone https://github.com/openfaas/faas-netes.git
+git clone https://github.com/innoobijr/faas-netes.git
 
 cd faas-netes
 

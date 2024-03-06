@@ -10,13 +10,13 @@ import (
 	"log"
 	"net/http"
 
-	types "github.com/openfaas/faas-provider/types"
+	types "github.com/innoobijr/faas-provider/types"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/selection"
 	v1 "k8s.io/client-go/listers/apps/v1"
 	klog "k8s.io/klog"
 
-	"github.com/openfaas/faas-netes/pkg/k8s"
+	"github.com/innoobijr/faas-netes/pkg/k8s"
 )
 
 // MakeFunctionReader handler for reading functions deployed in the cluster as deployments.

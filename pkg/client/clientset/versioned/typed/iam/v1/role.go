@@ -14,9 +14,9 @@ import (
 	"fmt"
 	"time"
 
-	v1 "github.com/openfaas/faas-netes/pkg/apis/iam/v1"
-	iamv1 "github.com/openfaas/faas-netes/pkg/client/applyconfiguration/iam/v1"
-	scheme "github.com/openfaas/faas-netes/pkg/client/clientset/versioned/scheme"
+	v1 "github.com/innoobijr/faas-netes/pkg/apis/iam/v1"
+	iamv1 "github.com/innoobijr/faas-netes/pkg/client/applyconfiguration/iam/v1"
+	scheme "github.com/innoobijr/faas-netes/pkg/client/clientset/versioned/scheme"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

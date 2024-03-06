@@ -24,11 +24,11 @@ Examples:
 
 **OpenFaaS for Kubernetes**
 
-See the [main.go](https://github.com/openfaas/faas-netes/blob/master/main.go) file in the [faas-netes](https://github.com/openfaas/faas-netes) Kubernetes backend.
+See the [main.go](https://github.com/innoobijr/faas-netes/blob/master/main.go) file in the [faas-netes](https://github.com/innoobijr/faas-netes) Kubernetes backend.
 
 **OpenFaaS for containerd (faasd)**
 
-See [provider.go](https://github.com/openfaas/faasd/blob/master/cmd/provider.go#L100) for the [faasd backend](https://github.com/openfaas/faasd/)
+See [provider.go](https://github.com/innoobijr/faasd/blob/master/cmd/provider.go#L100) for the [faasd backend](https://github.com/innoobijr/faasd/)
 
 I.e.:
 

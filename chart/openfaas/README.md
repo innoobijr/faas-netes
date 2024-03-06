@@ -2,15 +2,15 @@
 
 <img src="https://blog.alexellis.io/content/images/2017/08/faas_side.png" alt="OpenFaaS logo" width="60%">
 
-[OpenFaaS](https://github.com/openfaas/faas) (Functions as a Service) is a framework for building serverless functions with Docker and Kubernetes which has first class support for metrics. Any process can be packaged as a function enabling you to consume a range of web events without repetitive boiler-plate coding.
+[OpenFaaS](https://github.com/innoobijr/faas) (Functions as a Service) is a framework for building serverless functions with Docker and Kubernetes which has first class support for metrics. Any process can be packaged as a function enabling you to consume a range of web events without repetitive boiler-plate coding.
 
 ## Highlights
 
 * Ease of use through UI portal and *one-click* install
 * Write functions in any language for Linux or Windows and package in Docker/OCI image format
-* Portable - runs on existing hardware or public/private cloud. Native [Kubernetes](https://github.com/openfaas/faas-netes) support, Docker Swarm also available
-* [Operator / CRD option available](https://github.com/openfaas/faas-netes/)
-* [faas-cli](http://github.com/openfaas/faas-cli) available with stack.yml for creating and managing functions
+* Portable - runs on existing hardware or public/private cloud. Native [Kubernetes](https://github.com/innoobijr/faas-netes) support, Docker Swarm also available
+* [Operator / CRD option available](https://github.com/innoobijr/faas-netes/)
+* [faas-cli](http://github.com/innoobijr/faas-cli) available with stack.yml for creating and managing functions
 * Auto-scales according to metrics from Prometheus
 * Scales to zero and back again and can be tuned at a per-function level
 * Works with service-meshes
@@ -57,7 +57,7 @@ We recommend creating two namespaces, one for the OpenFaaS *core services* and o
 You can skip this step if you're using arkade to install OpenFaaS.
 
 ```sh
-kubectl apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/namespaces.yml
+kubectl apply -f https://raw.githubusercontent.com/innoobijr/faas-netes/master/namespaces.yml
 ```
 
 You will now have `openfaas` and `openfaas-fn`. If you want to change the names or to install into multiple installations then edit `namespaces.yml` from the `faas-netes` repo.
@@ -274,7 +274,7 @@ This option is good for those that have issues with or concerns about installing
 
 1. Clone the faas-netes repository
     ```sh
-    git clone https://github.com/openfaas/faas-netes.git
+    git clone https://github.com/innoobijr/faas-netes.git
     cd faas-netes
     ```
 
@@ -473,7 +473,7 @@ yaml) |
 | `gateway.maxIdleConns` | Set max idle connections from gateway to functions | `1024` |
 | `gateway.maxIdleConnsPerHost` | Set max idle connections from gateway to functions per host | `1024` |
 | `gateway.nodePort` | Change the port when creating multiple releases in the same baremetal cluster | `31112` |
-| `gateway.probeFunctions` | Set to true for Istio users as a workaround for: https://github.com/openfaas/faas/issues/1721 | `false` |
+| `gateway.probeFunctions` | Set to true for Istio users as a workaround for: https://github.com/innoobijr/faas/issues/1721 | `false` |
 | `gateway.readTimeout` | Read timeout for the gateway API | `65s` |
 | `gateway.replicas` | Replicas of the gateway, pick more than `1` for HA | `1` |
 | `gateway.resources` | Resource limits and requests for the gateway containers | See [values.yaml](./values.yaml) |

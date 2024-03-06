@@ -9,10 +9,10 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 package applyconfiguration
 
 import (
-	v1 "github.com/openfaas/faas-netes/pkg/apis/iam/v1"
-	openfaasv1 "github.com/openfaas/faas-netes/pkg/apis/openfaas/v1"
-	iamv1 "github.com/openfaas/faas-netes/pkg/client/applyconfiguration/iam/v1"
-	applyconfigurationopenfaasv1 "github.com/openfaas/faas-netes/pkg/client/applyconfiguration/openfaas/v1"
+	v1 "github.com/innoobijr/faas-netes/pkg/apis/iam/v1"
+	openfaasv1 "github.com/innoobijr/faas-netes/pkg/apis/openfaas/v1"
+	iamv1 "github.com/innoobijr/faas-netes/pkg/client/applyconfiguration/iam/v1"
+	applyconfigurationopenfaasv1 "github.com/innoobijr/faas-netes/pkg/client/applyconfiguration/openfaas/v1"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 )
 

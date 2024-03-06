@@ -13,8 +13,8 @@ import (
 	json "encoding/json"
 	"fmt"
 
-	v1 "github.com/openfaas/faas-netes/pkg/apis/iam/v1"
-	iamv1 "github.com/openfaas/faas-netes/pkg/client/applyconfiguration/iam/v1"
+	v1 "github.com/innoobijr/faas-netes/pkg/apis/iam/v1"
+	iamv1 "github.com/innoobijr/faas-netes/pkg/client/applyconfiguration/iam/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	types "k8s.io/apimachinery/pkg/types"

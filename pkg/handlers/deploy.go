@@ -15,9 +15,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/openfaas/faas-netes/pkg/k8s"
+	"github.com/innoobijr/faas-netes/pkg/k8s"
 
-	types "github.com/openfaas/faas-provider/types"
+	types "github.com/innoobijr/faas-provider/types"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"

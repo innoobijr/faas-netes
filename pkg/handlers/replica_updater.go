@@ -13,7 +13,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/openfaas/faas-provider/types"
+	"github.com/innoobijr/faas-provider/types"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 )
