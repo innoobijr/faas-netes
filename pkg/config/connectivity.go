@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/openfaas/faas-netes/version"
+	"github.com/innoobijr/faas-netes/version"
 )
 
 // ConnectivityCheck checks if the controller can reach the

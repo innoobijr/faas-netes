@@ -31,8 +31,8 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	fhttputil "github.com/openfaas/faas-provider/httputil"
-	"github.com/openfaas/faas-provider/types"
+	fhttputil "github.com/innoobijr/faas-provider/httputil"
+	"github.com/innoobijr/faas-provider/types"
 )
 
 const (

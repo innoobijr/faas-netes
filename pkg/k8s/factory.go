@@ -6,10 +6,10 @@ package k8s
 import (
 	"context"
 
-	vv1 "github.com/openfaas/faas-netes/pkg/apis/openfaas/v1"
-	openfaasv1 "github.com/openfaas/faas-netes/pkg/client/clientset/versioned/typed/openfaas/v1"
+	vv1 "github.com/innoobijr/faas-netes/pkg/apis/openfaas/v1"
+	openfaasv1 "github.com/innoobijr/faas-netes/pkg/client/clientset/versioned/typed/openfaas/v1"
 
-	v1 "github.com/openfaas/faas-netes/pkg/client/listers/openfaas/v1"
+	v1 "github.com/innoobijr/faas-netes/pkg/client/listers/openfaas/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/kubernetes"

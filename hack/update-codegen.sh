@@ -31,10 +31,10 @@ echo ">> Temporary output directory ${TEMP_DIR}"
 chmod +x ${CODEGEN_PKG}/generate-groups.sh
 
 ${CODEGEN_PKG}/generate-groups.sh all \
-    github.com/openfaas/faas-netes/pkg/client github.com/openfaas/faas-netes/pkg/apis \
+    github.com/innoobijr/faas-netes/pkg/client github.com/innoobijr/faas-netes/pkg/apis \
     "openfaas:v1 iam:v1" \
     --output-base "${TEMP_DIR}" \
     --go-header-file ${SCRIPT_ROOT}/hack/boilerplate.go.txt
 
 # Copy everything back.
-cp -r "${TEMP_DIR}/github.com/openfaas/faas-netes/." "${SCRIPT_ROOT}/"
+cp -r "${TEMP_DIR}/github.com/innoobijr/faas-netes/." "${SCRIPT_ROOT}/"

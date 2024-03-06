@@ -12,8 +12,8 @@ import (
 	"fmt"
 	"net/http"
 
-	iamv1 "github.com/openfaas/faas-netes/pkg/client/clientset/versioned/typed/iam/v1"
-	openfaasv1 "github.com/openfaas/faas-netes/pkg/client/clientset/versioned/typed/openfaas/v1"
+	iamv1 "github.com/innoobijr/faas-netes/pkg/client/clientset/versioned/typed/iam/v1"
+	openfaasv1 "github.com/innoobijr/faas-netes/pkg/client/clientset/versioned/typed/openfaas/v1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

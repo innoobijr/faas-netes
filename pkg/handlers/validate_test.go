@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/openfaas/faas-provider/types"
+	"github.com/innoobijr/faas-provider/types"
 )
 
 func Test_validateScalingLabels(t *testing.T) {

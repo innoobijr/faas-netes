@@ -13,7 +13,7 @@ import (
 	"github.com/google/go-containerregistry/pkg/authn"
 	"github.com/google/go-containerregistry/pkg/name"
 	"github.com/google/go-containerregistry/pkg/v1/remote"
-	types "github.com/openfaas/faas-provider/types"
+	types "github.com/innoobijr/faas-provider/types"
 )
 
 // Regex for RFC-1123 validation:

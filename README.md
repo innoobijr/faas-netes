@@ -1,21 +1,21 @@
 faas-netes - Serverless Functions For Kubernetes with OpenFaaS
 ===========
 
-[![Build Status](https://github.com/openfaas/faas-netes/workflows/build/badge.svg?branch=master)](https://github.com/openfaas/faas-netes/actions)
-[![Go Report Card](https://goreportcard.com/badge/github.com/openfaas/faas-netes)](https://goreportcard.com/report/github.com/openfaas/faas-netes)
+[![Build Status](https://github.com/innoobijr/faas-netes/workflows/build/badge.svg?branch=master)](https://github.com/innoobijr/faas-netes/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/innoobijr/faas-netes)](https://goreportcard.com/report/github.com/innoobijr/faas-netes)
 [![OpenFaaS](https://img.shields.io/badge/openfaas-serverless-blue.svg)](https://www.openfaas.com)
 
 ## Introduction
 
-`faas-netes` is an [OpenFaaS provider](https://github.com/openfaas/faas-provider) which enables Kubernetes for [OpenFaaS](https://github.com/openfaas/faas). It's part of a larger stack that brings a cloud-agnostic serverless experience to Kubernetes.
+`faas-netes` is an [OpenFaaS provider](https://github.com/innoobijr/faas-provider) which enables Kubernetes for [OpenFaaS](https://github.com/innoobijr/faas). It's part of a larger stack that brings a cloud-agnostic serverless experience to Kubernetes.
 
 The existing REST API, CLI and UI are fully compatible. With OpenFaaS Standard/Enterprise, you have an optional *operator* mode so that you can manage functions with `kubectl` and a `CustomResource`.
 
 You can deploy OpenFaaS to any Kubernetes service - whether managed or local, including to OpenShift. You will find any specific instructions and additional links in the documentation.
 
-[OpenFaaS (Functions as a Service)](https://github.com/openfaas/faas) is a framework for building serverless functions with Docker and Kubernetes which has first class support for metrics. Any process can be packaged as a function enabling you to consume a range of web events without repetitive boiler-plate coding.
+[OpenFaaS (Functions as a Service)](https://github.com/innoobijr/faas) is a framework for building serverless functions with Docker and Kubernetes which has first class support for metrics. Any process can be packaged as a function enabling you to consume a range of web events without repetitive boiler-plate coding.
 
-<img alt="OpenFaaS workflow" src="https://raw.githubusercontent.com/openfaas/faas/master/docs/of-workflow.png"></img>
+<img alt="OpenFaaS workflow" src="https://raw.githubusercontent.com/innoobijr/faas/master/docs/of-workflow.png"></img>
 > Pictured: [OpenFaaS conceptual architecture](https://docs.openfaas.com/architecture/stack/)
 
 ## Highlights

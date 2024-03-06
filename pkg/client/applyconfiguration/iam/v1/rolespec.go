@@ -9,7 +9,7 @@ Licensed under the MIT license. See LICENSE file in the project root for full li
 package v1
 
 import (
-	v1 "github.com/openfaas/faas-netes/pkg/apis/iam/v1"
+	v1 "github.com/innoobijr/faas-netes/pkg/apis/iam/v1"
 )
 
 // RoleSpecApplyConfiguration represents an declarative configuration of the RoleSpec type for use

@@ -11,11 +11,11 @@
 ## Why is this needed?
 <!--- Why is this change required? What problem does it solve? -->
 <!--- If it fixes an open issue, please link to the issue here. -->
-- [ ] I have raised an issue to propose this change ([required](https://github.com/openfaas/faas/blob/master/CONTRIBUTING.md))
+- [ ] I have raised an issue to propose this change ([required](https://github.com/innoobijr/faas/blob/master/CONTRIBUTING.md))
 
 ## Who is this for?
 
-What company is this for? Are you listed in the [ADOPTERS.md](https://github.com/openfaas/faas/blob/master/ADOPTERS.md) file?
+What company is this for? Are you listed in the [ADOPTERS.md](https://github.com/innoobijr/faas/blob/master/ADOPTERS.md) file?
 
 ## List All Possible Solutions and Workarounds
 <!--- Suggest a fix/reason for the bug, or ideas how to implement  -->

@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/openfaas/faas-provider/httputil"
+	"github.com/innoobijr/faas-provider/httputil"
 )
 
 // Requester submits queries the logging system.

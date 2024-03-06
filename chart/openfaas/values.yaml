@@ -77,7 +77,7 @@ gateway:
   logsProviderURL: ""
 
   # Set to true for Istio users as a workaround for:
-  # https://github.com/openfaas/faas/issues/1721
+  # https://github.com/innoobijr/faas/issues/1721
   probeFunctions: false
 
   # See the HPA rule from the Customer Community
@@ -184,7 +184,7 @@ faasnetesOem:
 
 # For the Community Edition
 faasnetes:
-  image: ghcr.io/openfaas/faas-netes:0.18.1
+  image: ghcr.io/innoobijr/faas-netes:0.18.1
   resources:
     requests:
       memory: "120Mi"
