@@ -225,7 +225,7 @@ spec:
       - name: ubuntu-container  # Ubuntu container for data manipulation.
         image: ubuntu  # The Docker image to use for the Ubuntu container.
         volumeMounts:
-          - name: shared-data  # Mounts the 'shared-data' volume inside the Ubuntu container.
+          - name: faas-netes-temp-volume  # Mounts the 'shared-data' volume inside the Ubuntu container.
             mountPath: "/var/run/"  # The path within the Ubuntu container for working with shared data.
         command: ["/bin/sh"]  # Specifies the command to run within the Ubuntu container.
         args: ["-c", "echo 'Hello, World!!!' > /var/index.html"] 
