@@ -1,4 +1,3 @@
-FROM ghcr.io/openfaas/license-check:0.4.2 as license-check
 
 FROM --platform=${BUILDPLATFORM:-linux/amd64} golang:1.22 as build
 
@@ -14,12 +13,9 @@ ENV CGO_ENABLED=0
 ENV GO111MODULE=on
 ENV GOFLAGS=-mod=vendor
 
-COPY --from=license-check /license-check /usr/bin/
-
 WORKDIR /go/src/github.com/innoobijr/faas-netes
 COPY . .
 
-RUN license-check -path /go/src/github.com/innoobijr/faas-netes/ --verbose=false "Alex Ellis" "OpenFaaS Author(s)"
 RUN gofmt -l -d $(find . -type f -name '*.go' -not -path "./vendor/*")
 RUN CGO_ENABLED=${CGO_ENABLED} GOOS=${TARGETOS} GOARCH=${TARGETARCH} go test -v ./...
 
@@ -45,7 +41,7 @@ RUN addgroup -S app \
 
 WORKDIR /home/app
 
-EXPOSE 8080
+EXPOSE 8081
 
 ENV http_proxy      ""
 ENV https_proxy     ""
