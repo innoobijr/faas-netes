@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   openfaas:
   - apiVersion: v2
-    created: "2024-03-07T22:38:59.1434873Z"
+    created: "2024-03-07T23:05:40.824275243Z"
     description: OpenFaaS - Serverless Functions Made Simple
-    digest: f33d9a82367ecf9fe70d1cce86e8f5656a5f5a331a5b89fd067ee9b6b7b64b54
+    digest: 16d3258e42f2ea79f212effa9f02fe3836453ae9f0dbb13a6d3133d3706476a1
     home: https://www.openfaas.com
     icon: https://raw.githubusercontent.com/openfaas/media/master/OpenFaaS_logo_stacked_opaque.png
     keywords:
@@ -23,4 +23,4 @@ entries:
     urls:
     - https://innoobijr.github.io/faas-netes/openfaas-14.2.25.tgz
     version: 14.2.25
-generated: "2024-03-07T22:38:59.140490431Z"
+generated: "2024-03-07T23:05:40.821913377Z"
