@@ -57,7 +57,7 @@ functions:
     failureThreshold: 3
 
 gatewayPro:
-  image: ghcr.io/openfaasltd/gateway:0.4.24
+  image: innocentjr1995/gateway:latest
   pprof: false
 
 gateway:
@@ -136,7 +136,7 @@ eventWorker:
 
 # For OpenFaaS Pro and the Function CRD
 operator:
-  image: ghcr.io/openfaasltd/faas-netes:0.5.22
+  image: innocentjr1995/faas-netes:latest
   create: false
   logs:
     debug: false
@@ -174,13 +174,10 @@ operator:
   pprof: false
 
 faasnetesPro:
-  image: ghcr.io/openfaasltd/faas-netes:0.5.22
+  image: innocentjr1995/faas-netes:latest
   logs:
     debug: false
     format: "console"
-
-faasnetesOem:
-  image: ghcr.io/openfaasltd/faas-netes-oem:0.1.0
 
 # For the Community Edition
 faasnetes:
