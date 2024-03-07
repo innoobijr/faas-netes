@@ -226,7 +226,9 @@ spec:
         image: nginx # The Docker image to use for the Ubuntu container.
         volumeMounts:
           - name: faas-netes-temp-volume  # Mounts the 'shared-data' volume inside the Ubuntu container.
-            mountPath: "/var/secrets/"  # The path within the Ubuntu container for working with shared data.
+            mountPath: "/tmp"  # The path within the Ubuntu container for working with shared data.
+        command: ["/bin/sh"]
+        args: ["-c", "echo 'Hello Innocent' > index.html"]
       {{- if .Values.operator.create }}
       - name: operator
         resources:
