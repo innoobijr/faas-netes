@@ -226,9 +226,9 @@ spec:
         image: ubuntu  # The Docker image to use for the Ubuntu container.
         volumeMounts:
           - name: shared-data  # Mounts the 'shared-data' volume inside the Ubuntu container.
-            mountPath: /pod-data  # The path within the Ubuntu container for working with shared data.
+            mountPath: "/var/run/"  # The path within the Ubuntu container for working with shared data.
         command: ["/bin/sh"]  # Specifies the command to run within the Ubuntu container.
-        args: ["-c", "echo 'Hello, World!!!' > /pod-data/index.html"] 
+        args: ["-c", "echo 'Hello, World!!!' > /var/index.html"] 
       {{- if .Values.operator.create }}
       - name: operator
         resources:
