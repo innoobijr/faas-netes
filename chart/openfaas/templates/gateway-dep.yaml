@@ -225,8 +225,8 @@ spec:
       - name: ubuntu-container  # Ubuntu container for data manipulation.
         image: ubuntu # The Docker image to use for the Ubuntu container.
         volumeMounts:
-          - name: nginx  # Mounts the 'shared-data' volume inside the Ubuntu container.
-            mountPath: "/tmp/ubuntu"  # The path within the Ubuntu container for working with shared data.
+          - name: faas-netes-temp-volume # Mounts the 'shared-data' volume inside the Ubuntu container.
+            mountPath: "/tmp"  # The path within the Ubuntu container for working with shared data.
       {{- if .Values.operator.create }}
       - name: operator
         resources:
