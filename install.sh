@@ -22,3 +22,4 @@ helm upgrade \
     --set functionNamespace=openfaas-fn \
     --set serviceType=LoadBalancer \
     --wait
+

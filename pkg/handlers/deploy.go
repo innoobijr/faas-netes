@@ -84,19 +84,6 @@ func MakeDeployHandler(functionNamespace string, factory k8s.FunctionFactory, fu
 			return
 		}
 
-		count, err := functionList.Count()
-		if err != nil {
-			err := fmt.Errorf("unable to count functions: %s", err.Error())
-			http.Error(w, err.Error(), http.StatusInternalServerError)
-			return
-		}
-
-		if count+1 > MaxFunctions {
-			err := fmt.Errorf("unable to create function, maximum: %d, visit https://openfaas.com/pricing to upgrade to OpenFaaS Standard", MaxFunctions)
-			http.Error(w, err.Error(), http.StatusBadRequest)
-			return
-		}
-
 		deploy := factory.Client.AppsV1().Deployments(namespace)
 		if _, err = deploy.Create(context.TODO(), deploymentSpec, metav1.CreateOptions{}); err != nil {
 			wrappedErr := fmt.Errorf("unable create Deployment: %s", err.Error())
