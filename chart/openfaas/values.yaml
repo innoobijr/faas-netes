@@ -1,7 +1,7 @@
 functionNamespace: openfaas-fn  # Default namespace for functions
 
 # Contact us via https://www.openfaas.com/support to purchase a license
-openfaasPro: false
+openfaasPro: true
 
 # Contact us via https://www.openfaas.com/support to purchase a license
 oem: false

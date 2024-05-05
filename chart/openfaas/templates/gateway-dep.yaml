@@ -53,11 +53,11 @@ spec:
         secret:
           secretName: basic-auth
       {{- end }}
-      {{- if or .Values.openfaasPro .Values.oem }}
-      - name: license
-        secret:
-          secretName: openfaas-license
-      {{- end }}
+      #{{- if or .Values.openfaasPro .Values.oem }}
+      #- name: license
+      #  secret:
+      #    secretName: openfaas-license
+      #{{- end }}
       # terminationGracePeriodSeconds: 1
       containers:
       - name: gateway
@@ -71,9 +71,9 @@ spec:
         imagePullPolicy: {{ .Values.openfaasImagePullPolicy }}
         command:
           - ./gateway
-        {{- if .Values.openfaasPro }}
-          - "-license-file=/var/secrets/license/license"
-        {{- end }}
+        #{{- if .Values.openfaasPro }}
+        #  - "-license-file=/var/secrets/license/license"
+        #{{- end }}
         {{- if .Values.securityContext }}
         securityContext:
           readOnlyRootFilesystem: true
@@ -212,11 +212,11 @@ spec:
           readOnly: true
           mountPath: "/var/secrets"
         {{- end }}
-        {{- if .Values.openfaasPro }}
-        - name: license
-          readOnly: true
-          mountPath: "/var/secrets/license"
-        {{- end }}
+        #{{- if .Values.openfaasPro }}
+        #- name: license
+        #  readOnly: true
+        #  mountPath: "/var/secrets/license"
+        #{{- end }}
         ports:
         - name: http
           containerPort: 8080
@@ -238,7 +238,7 @@ spec:
         command:
           - ./faas-netes
           - -operator=true
-          - "-license-file=/var/secrets/license/license"
+          #- "-license-file=/var/secrets/license/license"
         env:
           - name: reconcile_workers
             value: {{ .Values.operator.reconcileWorkers | quote }}
@@ -339,11 +339,11 @@ spec:
           readOnly: true
           mountPath: "/var/secrets/issuer-key"
         {{- end }}
-        {{- if .Values.openfaasPro }}
-        - name: license
-          readOnly: true
-          mountPath: "/var/secrets/license"
-        {{- end }}
+        #{{- if .Values.openfaasPro }}
+        #- name: license
+        #  readOnly: true
+        #  mountPath: "/var/secrets/license"
+        #{{- end }}
         {{- if .Values.basic_auth }}
         - name: auth
           readOnly: true
@@ -447,11 +447,11 @@ spec:
           readOnly: true
           mountPath: "/var/secrets/issuer-key"
         {{- end }}
-        {{- if or .Values.openfaasPro .Values.oem }}
-        - name: license
-          readOnly: true
-          mountPath: "/var/secrets/license"
-        {{- end }}
+        #{{- if or .Values.openfaasPro .Values.oem }}
+        #- name: license
+        #  readOnly: true
+        #  mountPath: "/var/secrets/license"
+        #{{- end }}
         {{- if .Values.basic_auth }}
         - name: auth
           readOnly: true
@@ -476,3 +476,4 @@ spec:
       tolerations:
 {{ toYaml . | indent 8 }}
     {{- end }}
+
